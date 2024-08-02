@@ -13,7 +13,7 @@ export const authSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addMatcher(
-        apiServices.diaryApi.endpoints.login.matchFulfilled,
+        apiServices.cryptoApi.endpoints.login.matchFulfilled,
         (state, { payload }) => {
           state.token = payload.access_token;
           state.user = payload.data;
@@ -21,7 +21,7 @@ export const authSlice = createSlice({
         }
       )
       .addMatcher(
-        apiServices.diaryApi.endpoints.register.matchFulfilled,
+        apiServices.cryptoApi.endpoints.register.matchFulfilled,
         (state, { payload }) => {
           state.token = payload.access_token;
           state.user = payload.data;

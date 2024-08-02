@@ -1,8 +1,8 @@
 // Define an array of API configurations
 export const apiConfigs = [
   {
-    name: "diaryApi",
-    baseUrl: `${import.meta.env.VITE_APP_MEMO_URL}`,
+    name: "cryptoApi",
+    baseUrl: `${import.meta.env.VITE_APP_CRYPTO_URL}`,
     auth: true,
     tagTypes: ["memo", "todo", "poem", "Auth"],
     endpoints: (builder) => ({
