@@ -7,7 +7,6 @@ export default function useLocalStorage(key) {
       key,
       JSON.stringify({ is_exist: value, exp: date.getDate() + 2 })
     );
-  console.log(exist);
   const clearData = () => localStorage.removeItem(key);
   return { exist, setData, clearData };
 }

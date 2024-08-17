@@ -1,4 +1,3 @@
-import React from "react";
 import { LogoIcon } from "../../assets/icons";
 import { Button } from "@material-tailwind/react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
